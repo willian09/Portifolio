@@ -95,7 +95,7 @@
 			width: auto;
 			height: auto;
 			}
-
+			
 		</style>
 		
 		<!-- HOME-->
@@ -201,9 +201,9 @@
 				</div>
 				<div class="input-group p-3 w-75" style="position: relative; left:50%; top: 50%; transform: translate(-50%, -220%)">
 					<span class="input-group-text">Digite <br>sua mensagem</span>
-					<textarea class="form-control" aria-label="With textarea"></textarea>
+					<textarea class="form-control" id="formGroupExampleInput3" aria-label="With textarea"></textarea>
 				</div>
-					<button type="button" class="btn btn-secondary" style="position: relative; color: rgb(43, 98, 66); background-color: white; left:50%; top: 50%; transform: translate(-50%, -500%)">Enviar</button>
+					<button onclick="enviarEmail()" type="button" class="btn btn-secondary" style="position: relative; color: rgb(43, 98, 66); background-color: white; left:50%; top: 50%; transform: translate(-50%, -500%)">Enviar</button>
 				</div>
         	</div>
       	 </section>
@@ -215,3 +215,19 @@
 		</footer>
     </body>
 </html>
+<script> /* função criada para simular o envio de email. */
+	function enviarEmail(){
+		var nome = document.getElementById("formGroupExampleInput").value
+		var email = document.getElementById("formGroupExampleInput2").value
+		var msg = document.getElementById("formGroupExampleInput3").value
+		if( nome =="" || email =="" || msg =="")
+		{
+			alert("Por favor, preencher todos os campos antes de realizar o envio.")
+			return
+		}
+		document.getElementById("formGroupExampleInput").value =""
+		document.getElementById("formGroupExampleInput2").value =""
+		document.getElementById("formGroupExampleInput3").value =""
+		alert("E-mail enviado com sucesso!")
+		}
+</script>
