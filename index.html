@@ -34,7 +34,6 @@
 			display: flex; 
 			flex-direction: row; 
 			justify-content: center; 
-			align-itens: center;
 			background-color:white;
 			margin:10px;
 			}
@@ -43,7 +42,7 @@
 			width:1300px;
 			height:730px;
 			position:relative;
-			background-image: url("https://wallpapercave.com/wp/wp3716761.jpg");
+			background-image: url("https://palmeirasweb.com/wp-content/uploads/2020/07/3650-bg-cadastro_V01.jpg");
 			background-size: 1300px;
 			border-radius:30px
 			}
@@ -82,38 +81,62 @@
 			font-family: Verdana, sans-serif;
 			margin:10px;
 			}
+
+			table{
+ 			width: 100%;
+  			margin-bottom : 10px;
+  			table-layout: fixed;
+  			text-align: center;
+			}
+
+			.container img {
+			max-width:750px;
+			max-height:525px;
+			width: auto;
+			height: auto;
+			}
+
 		</style>
 		
 		<!-- HOME-->
         <section id="home" style="display: flex; flex-direction: row; justify-content: center; padding-top: 170px ;">
             <div class="in"> <!-- Tag's CSS inseridas no formato inline por se tratar de um projeto simplificado -->
-				<div style=" position: absolute; top: 36.5%; left:3%; transform: translate(0, -50%); ">
+				<div style=" position: absolute; top: 45%; left:3%; transform: translate(0, -50%); ">
 					<table style=" font-size:medium;" >
 						<tr>
-							<th style="font-size: 3em; border-top-right-radius:20px; border-top-left-radius:20px; padding-left:10px; color:rgb(43, 98, 66);"> Sobre mim:</th>
+							<th style="font-size: 3em; border-top-right-radius:20px; border-top-left-radius:20px; padding-left:10px; color:white; text-align: left;"> Sobre mim:</th>
 						</tr>
 						<tr>
-							<td style="font-size:1.2em; border-bottom-right-radius:20px; border-bottom-left-radius:20px; padding:10px; color:rgb(43, 98, 66);">                        
-								Meu nome é Willian, tenho 32 anos sou um profissional proativo, atuando na área de Vendas, Trade Marketing <br>
-								e Inteligência de Mercado para atacado e varejo, B2B, entre outros segmentos. <br>                                
-                                • Possuo habilidades para o gerenciamento e promoção de marcas e produtos, desenvolvendo as políticas comerciais da empresa. <br>
-                                • Sempre interessado em alcançar novos objetivos e desafios, com visão estratégica, fácil adaptação a ambientes internos e externos, <br>
-                                priorizando o trabalho em equipe e disponibilidade para mudança de cidade/estado/país. <br>
+							<td style="font-size:1.2em; border-bottom-right-radius:20px; padding-top: 2%; border-bottom-left-radius:20px; color:white; text-align: left;">                        
+								Meu nome é Willian, tenho 32 anos, casado, sou natural de Cianorte no Paraná, <br>
+								cidade em que ainda resido, sou um profissional proativo, atuando na área de <br>
+								Vendas, Trade Marketing e Inteligência de Mercado para atacado e varejo, B2B, <br>
+								entre outros segmentos. <br>                                
+                                • Possuo habilidades para o gerenciamento e promoção de marcas e produtos, <br>
+								desenvolvendo as políticas comerciais da empresa. <br>
+                                • Sempre interessado em alcançar novos objetivos e desafios, com visão <br>
+								estratégica, fácil adaptação a ambientes internos e externos, priorizando <br>
+                                o trabalho em equipe.<br>
                                 <br>
-                                Sempre fui muito curioso e admiro muito a tecnologia, com isso, atualmente estou cursando <br>
-                                o segundo ano da faculdade de Análise e Desenvolvimento de Sistemas na Uninter. <br>
-								Desenvolvi este site como atividade prática da disciplina de Ferramentas de<br>
-								Desenvolvimento Web. <br>
+                                Sempre fui muito curioso e admiro muito a tecnologia, com isso, <br>
+								atualmente estou cursando o segundo ano do curso de Análise e <br>
+								Desenvolvimento de Sistemas na Uninter e pretendo muito em breve <br>
+								iniciar minha carreira como programador. <br>
+								<br>
+								Desenvolvi este portifólio como atividade prática da disciplina de <br>
+								Ferramentas de Desenvolvimento Web. <br>
                                 <br>
                                 Meus hobbies são curtir uma boa música, treinar pesado na academia e <br>
-                                ver o verdão dar aula em campo.</td>							
+                                ver o verdão dar aula em campo. Avanti Palestra!!</td>							
                             </tr>
 						</table>
-					</div>
-					<td><img src="https://avatars.githubusercontent.com/u/89816487?s=400&u=a9be5f5a326e3f2548cb678cab064ac8ebca76f6&v=4" class="rounded-circle" style="width: 180px; height:180px; position: relative; left: 3%; top: 73%;"></td>
+					</div>		
+					<div class="container">
+						<img src="Img/fotopalmeiras.jpg" width="320" height="205" style="position: absolute; left: 63%; bottom: 13%;" />
+					</div>	
             </div>
         </section>
-        
+		
         <!-- FORMAÇÃO--> <!-- Importado com Bootstrap -->
         <section id="formacao" style="display: flex; flex-direction: row; justify-content: center; padding-top: 150px; ">
 			<div class="formacao-info"style="background-color:white; height: 80px; width: 370px; margin-top: 50px; border-radius: 30px">
@@ -124,7 +147,7 @@
 		<br>
 		<br>
 
-		<table>
+		<table> <!--criei uma tabela de uma linha e cinco colunas para mostrar os curriculos alinhados-->
 			<tr>
 				<td>						
 					<a href="https://drive.google.com/file/d/1NX_A-668-YQQmb0dmzdDjjSFS2j4NsFm/view?usp=sharing"><img src="Img/contabeis.png" class="rounded" style="height: 230px; width: 378px;"></a>						
@@ -135,16 +158,21 @@
 				<td>
 					<a href="https://drive.google.com/file/d/1deqOoMeGwGzsAlhktnArKOoFV4Gg_JF-/view?usp=sharing"><img src="Img/ingles-intermediario.png" class="rounded" style="height: 230px; width: 378px;"></a>
 				</td>
+			</tr>
+			<tr>	
 				<td>
 					<a href="https://drive.google.com/file/d/1J4q_fUuXNz0cW_ad3-TX46vOKQkuChG3/view?usp=sharing"><img src="Img/ingles-avançado.png" class="rounded" style="height: 230px; width: 378px;"></a>
 				</td>
 				<td>
 					<a href="https://drive.google.com/file/d/1hRTjgnyvk4lVkCZUHIMPlAvGhXtLgsBZ/view?usp=sharing"><img src="Img/uninter.png" class="rounded" style="height: 230px; width: 378px;"></a>
 				</td>
+				<td>
+					<a href="https://www.credly.com/badges/455d6a0c-b8eb-4856-a5a8-9aca8376e86b?source=linked_in_profile"><img src="Img/CyberEssentials.png" class="rounded" style="height: 230px; width: 378px;"></a>
+				</td>
 			</tr>	
 		</table>
 		
-		<!-- PROJETOS-->
+		<!-- PROJETOS--> <!--criei os dois elementos dentro da div para minhas redes-->
 		<section id="projetos" style=" display: flex; flex-direction: row; justify-content: center; align-items: center; padding-top: 220px; color: whitesmoke;">
 			<div class="projetos-info" style="background-color:white; height: 80px; width: 500; margin-top: -50px; border-radius: 30px ">
 				<h4 style="margin: 20px; font-size:2em; color: rgb(43, 98, 66);"> Visite minhas redes para conhecer meus projetos:</h4>
